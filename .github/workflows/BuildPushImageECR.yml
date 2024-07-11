@@ -154,6 +154,8 @@ jobs:
         # Save PEM key to file and set permissions
         echo "${{ secrets.EC2_PEM_KEY }}" > ec2.pem
         chmod 400 ec2.pem
+        eval $(ssh-agent -s)
+        ssh-add ec2.pem
 
         # SSH, SCP commands
         SSH_COMMAND="ssh -i ec2.pem -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST"
