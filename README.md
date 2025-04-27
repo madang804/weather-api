@@ -13,7 +13,8 @@ A simple web API built with Python and Flask that provides weather-related infor
     - [Installation](#installation)
 4. [Deploying to AWS Elastic Beanstalk](#deploying-to-aws-elastic-beanstalk)
     - [Step-by-Step Guide](#step-by-step-guide)
-5. [License](#license)
+5. [Reference](#reference)
+6. [License](#license)
 
 ---
 
@@ -133,11 +134,27 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
 #### 6. Monitor Deployment
 - Wait for the environment creation process to complete.
 - Once the screen displays **Environment successfully launched**, your application is live.
-
+![eb-console.png](./png/eb-console.png)
 
 #### 7. Test Your API
 1. Copy the URL of your deployed application (e.g., `http://weather-api.eu-west-2.elasticbeanstalk.com`).
-2. Test the endpoints using tools like curl, postman or a browser.
+   - ![main.png](./png/main.png)
+2. Test the endpoints using a browser.
+   - ![weather.png](./png/weather.png)
+   - ![temperature.png](./png/temperature.png)
+   - ![wind.png](./png/wind.png)
+3. Test the endpoint using curl (optional)
+   - ![curl-weather.png](./png/curl-weather.png)
+   - ![curl-temperature.png](./png/curl-temperature.png)
+   - ![curl-wind.png](./png/curl-wind.png)
+
+---
+
+## Reference
+
+- https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html
+- https://flask.palletsprojects.com
+- https://www.python.org
 
 ---
 
