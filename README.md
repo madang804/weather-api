@@ -140,6 +140,7 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
 1. Copy the URL of your deployed application (e.g., `http://weather-api.eu-west-2.elasticbeanstalk.com`).
 ![main.png](./png/main.png)
 2. Test the endpoints using a browser.
+
 ![weather.png](./png/weather.png)
 ![temperature.png](./png/temperature.png)
 ![wind.png](./png/wind.png)
