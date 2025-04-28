@@ -68,7 +68,6 @@ The API is designed to simulate weather data for a given location.
    ```bash
    cd weather-api
    ```
-
 3. Test the Flask app on your local machine
    - Create virtual environment:
    ```bash
@@ -78,7 +77,7 @@ The API is designed to simulate weather data for a given location.
    ```bash
    source venv/bin/activate
    ```
-   - Install dependencies package
+   - Install dependencies package:
    ```bash
    pip install -r requirements.txt
    ```
@@ -87,6 +86,10 @@ The API is designed to simulate weather data for a given location.
    flask --app application run   
    ```
    - Open browser and visit `http://127.0.0.1:5000` to test the API locally.
+   - Deactivate virtual environment:
+   ```bash
+   deactivate
+   ```
 
 ---
 
