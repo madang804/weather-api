@@ -146,7 +146,7 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
    ![weather.png](./png/weather.png)
    ![temperature.png](./png/temperature.png)
    ![wind.png](./png/wind.png)
-3. Test the endpoints using curl (optional)
+3. Test the endpoints using curl (optional).
    ![curl-weather.png](./png/curl-weather.png)
    ![curl-temperature.png](./png/curl-temperature.png)
    ![curl-wind.png](./png/curl-wind.png)
