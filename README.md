@@ -56,11 +56,8 @@ The API is designed to simulate weather data for a given location.
 ## Getting Started
 
 ### Prerequisites
-- Python installed on your local machine.
-- Flask installed via pip:
-  ```bash
-  pip install flask
-  ```
+- Python and pip installed on your local machine.
+- For Windows user, use WSL to execute bash commands.
 
 ### Installation
 1. Clone the repository:
@@ -71,11 +68,25 @@ The API is designed to simulate weather data for a given location.
    ```bash
    cd weather-api
    ```
-3. Run the Flask app:
+
+3. Test the Flask app on your local machine
+   - Create virtual environment:
+   ```bash
+   python3 -m venv venv
+   ```
+   - Activate virtual environment:
+   ```bash
+   source venv/bin/activate
+   ```
+   - Install dependencies package
+   ```bash
+   pip install -r requirements.txt
+   ```
+   - Run the Flask app:
    ```bash
    flask --app application run   
    ```
-4. Open browser and visit `http://127.0.0.1:5000` to test the API locally.
+   - Open browser and visit `http://127.0.0.1:5000` to test the API locally.
 
 ---
 
@@ -85,29 +96,17 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
 
 ### Step-by-Step Guide
 
-#### 1. Prepare Flask Application
-1. Ensure Flask app has the following structure:
-   ```
-   ├── application.py    # Main Flask app
-   └── requirements.txt  # Dependencies
-   ```
-
-2. Create a `requirements.txt` file if it doesn’t exist:
-   ```bash
-   pip freeze > requirements.txt
-   ```
-
-#### 2. Zip Application Files
+#### 1. Zip Application Files
 - Create a `.zip` file of application folder. Include `application.py`, `requirements.txt`.
   ```bash
   zip application.zip application.py requirements.txt
   ```
 
-#### 3. Log In to AWS Management Console
+#### 2. Log In to AWS Management Console
 1. Navigate to the [AWS Elastic Beanstalk Console](https://console.aws.amazon.com/elasticbeanstalk).
 2. Click **Create Application**.
 
-#### 4. Create a New Elastic Beanstalk Application
+#### 3. Create a New Elastic Beanstalk Application
 1. Under **Application information** enter a name for application (e.g., `WeatherAPI`).
 2. Under **Environment information**, select:
    - **Domain:** Domain name (e.g., `weather-api`).
@@ -118,7 +117,7 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
    - **Platform:** Python
    - **Platform Branch:** Python 3.x (the version matching the app).
 
-#### 5. Upload Flask Application
+#### 4. Upload Flask Application
 1. Under **Application code**, select:
    - **Upload your code**
    - **Version label:** v1.0
@@ -131,12 +130,12 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
 4. Click **Skip to Review** to accept all remaining default setting.
 5. Click **Submit**.
 
-#### 6. Monitor Deployment
+#### 5. Monitor Deployment
 - Wait for the environment creation process to complete.
 - Once the screen displays **Environment successfully launched**, the application is live.
 ![eb-console.png](./png/eb-console.png)
 
-#### 7. Test API
+#### 6. Test API
 1. Copy the URL of the deployed application (e.g., `http://weather-api.eu-west-2.elasticbeanstalk.com`).
 ![main.png](./png/main.png)
 2. Test the endpoints using a browser.
