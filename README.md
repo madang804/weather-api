@@ -206,7 +206,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
      - AWSElasticBeanstalkWorkerTier
      - AWSElasticBeanstalkMulticontainerDocker
    - After creating the IAM Role, select the IAM role you just created. If the IAM role do not appear, click `Refresh` button.
-4. Click **Skip to Review** to accept all remaining default settings. If not click **Next** to make change to optional settings.
+4. Click **Skip to Review** to accept all remaining default settings. If not, click **Next** to apply further settings.
 5. Click **Submit** after review on the final page.
 
 #### 5. Monitor Deployment
