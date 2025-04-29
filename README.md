@@ -55,8 +55,6 @@ The API is designed to simulate weather data for a given location.
 
 ## Getting Started
 
-## Operating System Instructions
-
 <details>
 <summary>Windows</summary>
 
@@ -235,6 +233,7 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
 ![temperature.png](./png/temperature.png)
 
 ![wind.png](./png/wind.png)
+
 3. Test the endpoints using curl (optional).
 
 ![curl-weather.png](./png/curl-weather.png)
