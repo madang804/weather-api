@@ -171,15 +171,12 @@ The API is designed to simulate weather data for a given location.
 
 ## Deploying to AWS Elastic Beanstalk
 
-This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is a step-by-step guide.
+The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is a step-by-step guide.
 
 ### Step-by-Step Guide
 
 #### 1. Zip Application Files
-- Create a `.zip` file of application folder. Include `application.py`, `requirements.txt`.
-  ```bash
-  zip application.zip application.py requirements.txt
-  ```
+- Create a `.zip` file that include `application.py` and `requirements.txt`.
 
 #### 2. Log In to AWS Management Console
 1. Navigate to the [AWS Elastic Beanstalk Console](https://console.aws.amazon.com/elasticbeanstalk).
