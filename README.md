@@ -62,8 +62,6 @@ The API is designed to simulate weather data for a given location.
 - Python and pip installed.
 - Git installed.
 
-### Instructions for Windows
-
 1. Clone the repository:
    ```cmd
    git clone https://github.com/madang804/weather-api.git
@@ -93,15 +91,13 @@ The API is designed to simulate weather data for a given location.
    ```cmd
    deactivate
    ```
-
 <details>
+
 <summary>MacOS</summary>
 
 ### Prerequisites
 - Python and pip installed.
 - Git installed.
-
-### Instructions for MacOS
 
 1. Clone the repository:
    ```bash
@@ -132,7 +128,6 @@ The API is designed to simulate weather data for a given location.
    ```bash
    deactivate
    ```
-
 </details>
 
 <details>
@@ -142,8 +137,6 @@ The API is designed to simulate weather data for a given location.
 - Python and pip installed.
 - Git installed.
 
-### Instructions for Linux
-
 1. Clone the repository:
    ```bash
    git clone https://github.com/madang804/weather-api.git
@@ -173,7 +166,6 @@ The API is designed to simulate weather data for a given location.
    ```bash
    deactivate
    ```
-
 </details>
 
 ## Deploying to AWS Elastic Beanstalk
@@ -226,6 +218,7 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
 1. Copy the URL of the deployed application (e.g., `http://weather-api.eu-west-2.elasticbeanstalk.com`).
 
 ![main.png](./png/main.png)
+
 2. Test the endpoints using browser.
 
 ![weather.png](./png/weather.png)
