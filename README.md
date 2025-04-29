@@ -130,7 +130,7 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
    - **EC2 instance profile:** ElasticBeanstalk-EC2Role
    - If the ElasticBeanstalk-EC2Role does not exist in the dropdown list, create IAM Role for EC2 instance profile.
    - After creating the IAM Role for EC2 instance profile, select the IAM Role you just created from the EC2 instance profile dropdown list.
-4. Click **Skip to Review** to accept all remaining default setting.
+4. Click **Skip to Review** to accept all remaining default settings. If not click **Next** to make change to optional settings.
 5. Click **Submit**.
 
 #### 5. Monitor Deployment
