@@ -9,8 +9,6 @@ A simple web API built with Python and Flask that provides weather-related infor
 1. [About the Project](#about-the-project)
 2. [Endpoints](#endpoints)
 3. [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
 4. [Deploying to AWS Elastic Beanstalk](#deploying-to-aws-elastic-beanstalk)
     - [Step-by-Step Guide](#step-by-step-guide)
 5. [Reference](#reference)
