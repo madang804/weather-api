@@ -18,9 +18,9 @@ A simple web API built with Python and Flask that provides weather-related infor
 
 ## About the Project
 This Flask-based web API provides three endpoints for weather-related information:
-- `weather at location`
-- `temperature at location`
-- `wind speed at location`
+- `weather`
+- `temperature`
+- `wind speed and direction`
 
 The API is designed to simulate weather data for a given location.
 
@@ -28,21 +28,21 @@ The API is designed to simulate weather data for a given location.
 
 ## Endpoints
 
-### 1. Weather at Location
+### 1. Weather
 - **Endpoint:** `/weather`
 - **Method:** `GET`
 - **Query Parameters:**
   - `location` (required): The location for which weather data is requested.
 - **Response:** A random weather description (e.g., sunny, cloudy, rainy).
 
-### 2. Temperature at Location
+### 2. Temperature
 - **Endpoint:** `/temperature`
 - **Method:** `GET`
 - **Query Parameters:**
   - `location` (required): The location for which temperature data is requested.
 - **Response:** A random temperature in Celsius.
 
-### 3. Wind Speed at Location
+### 3. Wind Speed and Direction
 - **Endpoint:** `/wind`
 - **Method:** `GET`
 - **Query Parameters:**
