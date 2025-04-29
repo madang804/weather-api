@@ -55,11 +55,56 @@ The API is designed to simulate weather data for a given location.
 
 ## Getting Started
 
-### Prerequisites
-- Python and pip installed on your local machine.
-- For Windows user, use WSL to execute bash commands.
+## Operating System Instructions
 
-### Installation
+<details>
+<summary>Windows</summary>
+
+### Prerequisites
+- Python and pip installed.
+- Git installed.
+
+### Instructions for Windows
+
+1. Clone the repository:
+   ```cmd
+   git clone https://github.com/madang804/weather-api.git
+   ```
+2. Navigate to the project directory:
+   ```cmd
+   cd weather-api
+   ```
+3. Create a virtual environment:
+   ```cmd
+   python -m venv venv
+   ```
+4. Activate the virtual environment:
+   ```cmd
+   venv\Scripts\activate
+   ```
+5. Install dependencies:
+   ```cmd
+   pip install -r requirements.txt
+   ```
+6. Run the Flask app:
+   ```cmd
+   flask --app application run
+   ```
+7. Open a browser and visit `http://127.0.0.1:5000` to test the API locally.
+8. Deactivate the virtual environment:
+   ```cmd
+   deactivate
+   ```
+
+<details>
+<summary>MacOS</summary>
+
+### Prerequisites
+- Python and pip installed.
+- Git installed.
+
+### Instructions for MacOS
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/madang804/weather-api.git
@@ -68,30 +113,70 @@ The API is designed to simulate weather data for a given location.
    ```bash
    cd weather-api
    ```
-3. Test the Flask app on your local machine
-   - Create virtual environment:
+3. Create a virtual environment:
    ```bash
    python3 -m venv venv
    ```
-   - Activate virtual environment:
+4. Activate the virtual environment:
    ```bash
    source venv/bin/activate
    ```
-   - Install dependencies package:
+5. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-   - Run the Flask app:
+6. Run the Flask app:
    ```bash
-   flask --app application run   
+   flask --app application run
    ```
-   - Open browser and visit `http://127.0.0.1:5000` to test the API locally.
-   - Deactivate virtual environment:
+7. Open a browser and visit `http://127.0.0.1:5000` to test the API locally.
+8. Deactivate the virtual environment:
    ```bash
    deactivate
    ```
 
----
+</details>
+
+<details>
+<summary>Linux</summary>
+
+### Prerequisites
+- Python and pip installed.
+- Git installed.
+
+### Instructions for Linux
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/madang804/weather-api.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd weather-api
+   ```
+3. Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   ```
+4. Activate the virtual environment:
+   ```bash
+   source venv/bin/activate
+   ```
+5. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+6. Run the Flask app:
+   ```bash
+   flask --app application run
+   ```
+7. Open a browser and visit `http://127.0.0.1:5000` to test the API locally.
+8. Deactivate the virtual environment:
+   ```bash
+   deactivate
+   ```
+
+</details>
 
 ## Deploying to AWS Elastic Beanstalk
 
@@ -136,20 +221,27 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
 #### 5. Monitor Deployment
 - Wait for the environment creation process to complete.
 - Once the screen displays **Environment successfully launched**, the application is live.
+
 ![eb-console.png](./png/eb-console.png)
 
 #### 6. Test API
 1. Copy the URL of the deployed application (e.g., `http://weather-api.eu-west-2.elasticbeanstalk.com`).
+
 ![main.png](./png/main.png)
 2. Test the endpoints using browser.
 
-   ![weather.png](./png/weather.png)
-   ![temperature.png](./png/temperature.png)
-   ![wind.png](./png/wind.png)
+![weather.png](./png/weather.png)
+
+![temperature.png](./png/temperature.png)
+
+![wind.png](./png/wind.png)
 3. Test the endpoints using curl (optional).
-   ![curl-weather.png](./png/curl-weather.png)
-   ![curl-temperature.png](./png/curl-temperature.png)
-   ![curl-wind.png](./png/curl-wind.png)
+
+![curl-weather.png](./png/curl-weather.png)
+
+![curl-temperature.png](./png/curl-temperature.png)
+
+![curl-wind.png](./png/curl-wind.png)
 
 ---
 
