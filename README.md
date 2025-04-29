@@ -91,8 +91,9 @@ The API is designed to simulate weather data for a given location.
    ```cmd
    deactivate
    ```
-<details>
+</details>
 
+<details>
 <summary>MacOS</summary>
 
 ### Prerequisites
@@ -217,23 +218,23 @@ This project is deployed to AWS Elastic Beanstalk via the AWS Console. Below is 
 #### 6. Test API
 1. Copy the URL of the deployed application (e.g., `http://weather-api.eu-west-2.elasticbeanstalk.com`).
 
-![main.png](./png/main.png)
+   ![main.png](./png/main.png)
 
 2. Test the endpoints using browser.
 
-![weather.png](./png/weather.png)
+   ![weather.png](./png/weather.png)
 
-![temperature.png](./png/temperature.png)
+   ![temperature.png](./png/temperature.png)
 
-![wind.png](./png/wind.png)
+   ![wind.png](./png/wind.png)
 
 3. Test the endpoints using curl (optional).
 
-![curl-weather.png](./png/curl-weather.png)
+   ![curl-weather.png](./png/curl-weather.png)
 
-![curl-temperature.png](./png/curl-temperature.png)
+   ![curl-temperature.png](./png/curl-temperature.png)
 
-![curl-wind.png](./png/curl-wind.png)
+   ![curl-wind.png](./png/curl-wind.png)
 
 ---
 
