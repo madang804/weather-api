@@ -51,7 +51,7 @@ The API is designed to simulate weather data for a given location.
 
 ---
 
-## Getting Started
+## Select your OS to get started
 
 <details>
 <summary>Windows</summary>
@@ -175,6 +175,29 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
 #### 1. Zip Application Files
 - Create a `.zip` file that include `application.py` and `requirements.txt`.
+
+<details>
+<summary>Windows</summary>
+### Prerequisites
+- 7-zip installed.
+  ```cmd
+  "C:\Program Files\7-Zip\7z.exe" a -tzip application.zip application.py requirements.txt
+  ```
+</details>
+
+<details>
+<summary>MacOS</summary>
+  ```bash
+  "zip application.zip application.py requirements.txt
+  ```
+</details>
+
+<details>
+<summary>Linux</summary>
+  ```bash
+  "zip application.zip application.py requirements.txt
+  ```
+</details>
 
 #### 2. Log In to AWS Management Console
 1. Navigate to the [AWS Elastic Beanstalk Console](https://console.aws.amazon.com/elasticbeanstalk).
