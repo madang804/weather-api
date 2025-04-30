@@ -10,7 +10,6 @@ A simple web API built with Python and Flask that provides weather-related infor
 2. [Endpoints](#endpoints)
 3. [Getting Started](#getting-started)
 4. [Deploying to AWS Elastic Beanstalk](#deploying-to-aws-elastic-beanstalk)
-    - [Step-by-Step Guide](#step-by-step-guide)
 5. [Reference](#reference)
 6. [License](#license)
 
@@ -298,7 +297,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
    ```bash
    curl -s http://weather-api.eu-west-2.elasticbeanstalk.com/api/v1.0/wind?location=london | jq .
    ```
-4. Run this command to destroy the resources in AWS
+4. Run this command to destroy deployed AWS resources.
    ```bash
    terraform destroy -auto-approve
    ```
