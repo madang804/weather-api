@@ -274,8 +274,10 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 <summary>Terraform</summary>
 
 ### Prerequisites
-- aws cli installed.
-- 
+- aws CLI installed.
+- curl installed.
+- jq installed (optional)
+ 
 1. Ensure `zip_app.sh` is executable.
    ```bash
    chmod +x zip_app.sh
@@ -286,8 +288,16 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
    terraform plan
    terraform apply -auto-approve
    ```
-3. Test the api
-
+3. Test API
+   ```bash
+   curl -s http://weather-api.eu-west-2.elasticbeanstalk.com/api/v1.0/weather?location=london | jq .
+   ```
+   ```bash
+   curl -s http://weather-api.eu-west-2.elasticbeanstalk.com/api/v1.0/temperature?location=london | jq .
+   ```
+   ```bash
+   curl -s http://weather-api.eu-west-2.elasticbeanstalk.com/api/v1.0/wind?location=london | jq .
+   ```
 4. Run this command to destroy the resources in AWS
    ```bash
    terraform destroy -auto-approve
