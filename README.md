@@ -279,7 +279,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
  
 1. Change to terraform directory
    ```bash
-   cd terraform/
+   cd terraform
    ```
 1. Ensure `zip_app.sh` is executable.
    ```bash
