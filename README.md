@@ -307,8 +307,12 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
    ```
 5. NOTE: AWS Elastic Beanstalk automatically creates an S3 bucket which is not managed by Terraform code. AWS recommends to manually delete the bucket.
    ```bash
-   aws s3 rm s3://elasticbeanstalk-<region>-<account-id> --recursive
-   aws s3api delete-bucket --bucket elasticbeanstalk-<region>-<account-id>
+   # Delete S3 bucket objects
+   aws s3 rm "s3://$(aws s3 ls | awk '{print $3}')" --recursive
+   # Delete S3 bucket policy
+   aws s3api delete-bucket-policy --bucket "$(aws s3 ls | awk '{print $3}')"
+   # Delete S3 bucket
+   aws s3api delete-bucket --bucket "$(aws s3 ls | awk '{print $3}')"
    ```
   
 </details>
