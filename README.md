@@ -273,8 +273,11 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 <details>
 <summary>Terraform</summary>
 
+- Ensure `zip_app.sh` is executable.
+  ```bash
+  chmod +x zip_app.sh
+  ```
 - Run these Terraform commands to deploy Flask app to AWS Elastic Beanstalk.
-
   ```bash
   terraform init
   terraform plan
