@@ -319,8 +319,8 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
 - https://www.python.org
 - https://flask.palletsprojects.com
-- https://developer.hashicorp.com/terraform
 - https://registry.terraform.io/
+- https://developer.hashicorp.com/terraform
 - https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html
 
 ---
