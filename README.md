@@ -51,7 +51,9 @@ The API is designed to simulate weather data for a given location.
 
 ---
 
-## Select your OS to get started
+## Getting Started
+
+### Select your OS
 
 <details>
 <summary>Windows</summary>
@@ -169,6 +171,9 @@ The API is designed to simulate weather data for a given location.
 
 ## Deploying to AWS Elastic Beanstalk
 
+<details>
+<summary>AWS Console</summary>
+
 The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is a step-by-step guide.
 
 ### Step-by-Step Guide
@@ -266,6 +271,19 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
    ![curl-temperature.png](./png/curl-temperature.png)
 
    ![curl-wind.png](./png/curl-wind.png)
+
+<\details>
+
+<details>
+<summary>Terraform</summary>
+
+'''cmd
+terraform init
+terraform plan
+terraform apply auto-approve
+```
+
+<\details>
 
 ---
 
