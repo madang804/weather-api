@@ -273,25 +273,30 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 <details>
 <summary>Terraform</summary>
 
-- Ensure `zip_app.sh` is executable.
-  ```bash
-  chmod +x zip_app.sh
-  ```
-- Run these Terraform commands to deploy Flask app to AWS Elastic Beanstalk.
-  ```bash
-  terraform init
-  terraform plan
-  terraform apply -auto-approve
-  ```
-- Run this command to destroy the resources in AWS
-  ```bash
-  terraform destroy -auto-approve
-  ```
-- NOTE: AWS Elastic Beanstalk automatically creates an S3 bucket which is not managed by Terraform code. AWS recommends to manually delete the bucket.
-  ```bash
-  aws s3 rm s3://elasticbeanstalk-<region>-<account-id> --recursive
-  aws s3api delete-bucket --bucket elasticbeanstalk-<region>-<account-id>
-  ```
+### Prerequisites
+- aws cli installed.
+- 
+1. Ensure `zip_app.sh` is executable.
+   ```bash
+   chmod +x zip_app.sh
+   ```
+2. Run these Terraform commands to deploy Flask app to AWS Elastic Beanstalk.
+   ```bash
+   terraform init
+   terraform plan
+   terraform apply -auto-approve
+   ```
+3. Test the api
+
+4. Run this command to destroy the resources in AWS
+   ```bash
+   terraform destroy -auto-approve
+   ```
+5. NOTE: AWS Elastic Beanstalk automatically creates an S3 bucket which is not managed by Terraform code. AWS recommends to manually delete the bucket.
+   ```bash
+   aws s3 rm s3://elasticbeanstalk-<region>-<account-id> --recursive
+   aws s3api delete-bucket --bucket elasticbeanstalk-<region>-<account-id>
+   ```
   
 </details>
 
