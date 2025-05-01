@@ -8,12 +8,14 @@ application = Flask(__name__)
 def home():
     return '''
         <h1>How to make an API call</h1>
-        <h3>Append the following path and your chosen location after the url to get the current weather stat</h3>
+        <h3>Append the following path and your chosen location after the url to get the current weather</h3>
         <ul>/api/v1.0/weather?location=<b>&#60;input location&#62;</b></ul>
-        <h3>Append the following path and your chosen location after the url to get the current temperature stat</h3>
+        <h3>Append the following path and your chosen location after the url to get the current temperature</h3>
         <ul>/api/v1.0/temperature?location=<b>&#60;input location&#62;</b></ul>
-        <h3>Append the following path and your chosen location after the url to get the current wind stat</h3>
+        <h3>Append the following path and your chosen location after the url to get the current wind speed and direction</h3>
         <ul>/api/v1.0/wind?location=<b>&#60;input location&#62;</b></ul>
+        <h3>Append the following path and your chosen location after the url to get the current humidity</h3>
+        <ul>/api/v1.0/humidity?location=<b>&#60;input location&#62;</b></ul>
     '''
 
 @application.route('/api/v1.0/weather')
@@ -29,21 +31,30 @@ def weather():
 @application.route('/api/v1.0/temperature')
 def temperature():
     location = request.args.get('location')
-    temperature = round(random.uniform(-20, 50), 2)
+    temperature = random.uniform(-20, 50)
     return jsonify({
         'location': location,
-        'temperature': f'{temperature} °C'
+        'temperature': f'{int(temperature)} °C'
     })
 
 @application.route('/api/v1.0/wind')
 def wind():
     location = request.args.get('location')
-    wind_speed = round(random.uniform(0, 100), 2)
-    wind_direction = round(random.uniform(0, 360), 2)
+    wind_speed = random.uniform(0, 100)
+    wind_direction = random.uniform(0, 360)
     return jsonify({
         'location': location,
-        'wind speed': f'{wind_speed} kts',
-        'wind direction': f'{wind_direction} deg'
+        'wind speed': f'{int(wind_speed)} kts',
+        'wind direction': f'{int(wind_direction)} deg'
+    })
+
+@application.route('/api/v1.0/humidity')
+def humidity():
+    location = request.args.get('location')
+    humidity = random.uniform(0, 100)
+    return jsonify({
+        'location': location,
+        'humidity': f'{int(humidity)}%'
     })
 
 
