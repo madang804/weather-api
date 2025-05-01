@@ -20,6 +20,7 @@ This Flask-based web API provides four endpoints for weather-related information
 - `weather`
 - `temperature`
 - `wind speed and direction`
+- `humidity`
 
 The API is designed to simulate weather data for a given location.
 
