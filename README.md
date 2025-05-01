@@ -267,54 +267,23 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
    ![curl-wind.png](./png/curl-wind.png)
 
-</details>
+4. Clean Up
+   1. Terminate Elastic Beanstalk Environment
+      - Go to Elastic Beanstalk console.
+      - Select your application environment from the `Environment` tab.
+      - Click `Actions` and select `Terminate Environment`.
+      - Confirm the termination.
+   3. Delete Elastic Beanstalk Application
+      - Select your application from the `Application` tab.
+      - Click `Actions` and select `Delete Application`.
+      - Confirm the deletion.
+   4. Delete S3 Bucket
+      - Go to S3 console
+      - Find the bucket (e.g., elasticbeanstalk-eu-west-2-<account-id>).
+      - Empty the bucket
+      - Select `Permissions` tab and delete `Bucket policy`.
+      - Delete the bucket
 
-<details>
-<summary>Terraform</summary>
-
-### Prerequisites
-- aws CLI installed.
-- curl installed.
-- jq installed (optional)
- 
-1. Change to terraform directory
-   ```bash
-   cd terraform
-   ```
-1. Ensure `zip_app.sh` is executable.
-   ```bash
-   chmod +x zip_app.sh
-   ```
-2. Run these Terraform commands to deploy Flask app to AWS Elastic Beanstalk.
-   ```bash
-   terraform init
-   terraform plan
-   terraform apply -auto-approve
-   ```
-3. Test API
-   ```bash
-   curl -s http://weather-api.eu-west-2.elasticbeanstalk.com/api/v1.0/weather?location=london | jq .
-   ```
-   ```bash
-   curl -s http://weather-api.eu-west-2.elasticbeanstalk.com/api/v1.0/temperature?location=london | jq .
-   ```
-   ```bash
-   curl -s http://weather-api.eu-west-2.elasticbeanstalk.com/api/v1.0/wind?location=london | jq .
-   ```
-4. Run this command to destroy deployed AWS resources.
-   ```bash
-   terraform destroy -auto-approve
-   ```
-5. NOTE: AWS Elastic Beanstalk automatically creates an S3 bucket which is not managed by Terraform code. AWS recommends to manually delete the bucket.
-   ```bash
-   # Delete S3 bucket objects
-   aws s3 rm "s3://$(aws s3 ls | awk '{print $3}')" --recursive
-   # Delete S3 bucket policy
-   aws s3api delete-bucket-policy --bucket "$(aws s3 ls | awk '{print $3}')"
-   # Delete S3 bucket
-   aws s3api delete-bucket --bucket "$(aws s3 ls | awk '{print $3}')"
-   ```
-  
 </details>
 
 ---
