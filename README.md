@@ -16,7 +16,7 @@ A simple web API built with Python and Flask that provides weather-related infor
 ---
 
 ## About the Project
-This Flask-based web API provides three endpoints for weather-related information:
+This Flask-based web API provides four endpoints for weather-related information:
 - `weather`
 - `temperature`
 - `wind speed and direction`
@@ -39,7 +39,7 @@ The API is designed to simulate weather data for a given location.
 - **Method:** `GET`
 - **Query Parameters:**
   - `location` (required): The location for which temperature data is requested.
-- **Response:** A random temperature in Celsius.
+- **Response:** A random temperature in celsius.
 
 ### 3. Wind Speed and Direction
 - **Endpoint:** `/wind`
@@ -47,6 +47,13 @@ The API is designed to simulate weather data for a given location.
 - **Query Parameters:**
   - `location` (required): The location for which wind speed and direction data is requested.
 - **Response:** A random wind speed (e.g., 15 kts) and direction (e.g., 45 deg).
+
+### 4. Humidity
+- **Endpoint:** `/humidity`
+- **Method:** `GET`
+- **Query Parameters:**
+  - `location` (required): The location for which temperature data is requested.
+- **Response:** A random humidity in percent.
 
 ---
 
@@ -171,8 +178,6 @@ The API is designed to simulate weather data for a given location.
 ## Deploying to AWS Elastic Beanstalk
 
 The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is a step-by-step guide.
-
-### Step-by-Step Guide
 
 #### 1. Zip Application Files
 - Create a `.zip` file that includes `application.py` and `requirements.txt`.
