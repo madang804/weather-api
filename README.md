@@ -276,7 +276,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
       - Confirm the deletion.
    4. Delete S3 Bucket
       - Go to S3 console.
-      - Find the bucket (e.g., elasticbeanstalk-eu-west-2-<account-id>).
+      - Select the bucket.
       - Empty the bucket
       - Select `Permissions` tab and delete `Bucket policy`.
       - Delete the bucket
