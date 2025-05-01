@@ -68,7 +68,7 @@ The API is designed to simulate weather data for a given location.
 ### Prerequisites
 - Python (3.13.x) and pip (25.0.x) installed.
 - Git (2.49.x) installed.
-- Other version may no work.
+- Other versions may not work.
 
 1. Clone the repository:
    ```cmd
