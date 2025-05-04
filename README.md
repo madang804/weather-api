@@ -223,9 +223,9 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 2. Click **Create Application**.
 
 #### 3. Create a New Elastic Beanstalk Application
-1. Under **Application information** name the application (e.g., `WeatherAPI`).
+1. Under **Application information** name the application (e.g., `WeatherApp`).
 2. Under **Environment information**:
-   - Choose a domain prefix (e.g., `weather-api`) and check availability.
+   - Choose a domain prefix (e.g., `weather-app`) and check availability.
    - Leave blank to auto-generate.
 3. Under **Platform**:
    - Select **Python** and the appropriate **Platform Branch**.
