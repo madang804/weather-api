@@ -108,6 +108,7 @@ The API is designed to simulate weather data for a given location.
 ### Prerequisites
 - Python and pip installed.
 - Git installed.
+- Not tested but should work fine.
 
 1. Clone the repository:
    ```bash
