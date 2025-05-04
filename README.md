@@ -193,7 +193,6 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
 ### Prerequisites
 - 7-Zip installed.
-
   ```cmd
   "C:\Program Files\7-Zip\7z.exe" a -tzip application.zip application.py requirements.txt
   ```
@@ -204,7 +203,6 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
 ### Prerequisites
 - Zip installed.
-
   ```bash
   "zip application.zip application.py requirements.txt
   ```
@@ -215,7 +213,6 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
 ### Prerequisites
 - Zip installed.
-
   ```bash
   "zip application.zip application.py requirements.txt
   ```
