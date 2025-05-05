@@ -204,7 +204,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 ### Prerequisites
 - Zip installed.
   ```bash
-  "zip application.zip application.py requirements.txt Procfile
+  zip application.zip application.py requirements.txt Procfile
   ```
 </details>
 
@@ -214,7 +214,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 ### Prerequisites
 - Zip installed.
   ```bash
-  "zip application.zip application.py requirements.txt Procfile
+  zip application.zip application.py requirements.txt Procfile
   ```
 </details>
 
