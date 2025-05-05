@@ -1,7 +1,7 @@
-# Weather API
+# Weather App
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)  
-A simple web API built with Python and Flask that provides weather-related information. This service is designed to allow other web applications to connect and retrieve random weather data for a given location.
+A simple web API built with Python and Flask that provides weather-related information. This service is designed to allow other web applications to connect and retrieve random weather data for a location parameter.
 
 ---
 
@@ -16,7 +16,7 @@ A simple web API built with Python and Flask that provides weather-related infor
 ---
 
 ## About the Project
-This Flask-based web API provides four endpoints for weather-related information:
+This Flask-based web App provides four endpoints for weather-related information:
 - `weather`
 - `temperature`
 - `wind speed and direction`
@@ -73,11 +73,11 @@ The API is designed to simulate weather data for a given location.
 
 1. Clone the repository:
    ```cmd
-   git clone https://github.com/madang804/weather-api.git
+   git clone https://github.com/madang804/weather-app.git
    ```
 2. Navigate to project directory:
    ```cmd
-   cd weather-api
+   cd weather-app
    ```
 3. Create a virtual environment:
    ```cmd
@@ -112,11 +112,11 @@ The API is designed to simulate weather data for a given location.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/madang804/weather-api.git
+   git clone https://github.com/madang804/weather-app.git
    ```
 2. Navigate to project directory:
    ```bash
-   cd weather-api
+   cd weather-app
    ```
 3. Create a virtual environment:
    ```bash
@@ -152,11 +152,11 @@ The API is designed to simulate weather data for a given location.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/madang804/weather-api.git
+   git clone https://github.com/madang804/weather-app.git
    ```
 2. Navigate to project directory:
    ```bash
-   cd weather-api
+   cd weather-app
    ```
 3. Create a virtual environment:
    ```bash
@@ -186,7 +186,7 @@ The API is designed to simulate weather data for a given location.
 The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is a step-by-step guide.
 
 #### 1. Zip Application Files
-- Create a `.zip` file that includes `application.py` and `requirements.txt`.
+- Create a `.zip` file that includes `application.py`, `requirements.txt` and `Procfile`.
 
 <details>
 <summary>Windows</summary>
@@ -194,7 +194,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 ### Prerequisites
 - 7-Zip installed.
   ```cmd
-  "C:\Program Files\7-Zip\7z.exe" a -tzip application.zip application.py requirements.txt
+  "C:\Program Files\7-Zip\7z.exe" a -tzip application.zip application.py requirements.txt Procfile
   ```
 </details>
 
@@ -204,7 +204,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 ### Prerequisites
 - Zip installed.
   ```bash
-  "zip application.zip application.py requirements.txt
+  "zip application.zip application.py requirements.txt Procfile
   ```
 </details>
 
@@ -214,7 +214,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 ### Prerequisites
 - Zip installed.
   ```bash
-  "zip application.zip application.py requirements.txt
+  "zip application.zip application.py requirements.txt Procfile
   ```
 </details>
 
@@ -247,7 +247,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 5. Click **Submit** to deploy.
 
 #### 5. Monitor Deployment
-- Wait until you see **Environment successfully launched**. App is now live.
+- Wait until you see **Environment successfully launched**.
 
   ![eb-console.png](./png/console.png)
 
