@@ -193,7 +193,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
 ### Prerequisites
 - 7-Zip installed.
-
+  
   CMD
   ```cmd
   "C:\Program Files\7-Zip\7z.exe" a -tzip application.zip application.py requirements.txt Procfile
