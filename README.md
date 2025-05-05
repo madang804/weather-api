@@ -145,9 +145,9 @@ The API is designed to simulate weather data for a given location.
 <summary>Linux</summary>
 
 ### Prerequisites
-- Ubuntu 24.04.2 LTS
-- Python (3.12.x) and pip (24.0.x) installed.
-- Git (2.43.x) installed.
+- Ubuntu 22.04.x LTS
+- Python (3.10.x) and pip (22.0.x) installed.
+- Git (2.34.x) installed.
 - Other versions may not work.
 
 1. Clone the repository:
