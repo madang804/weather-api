@@ -93,9 +93,9 @@ The API is designed to simulate weather data for a given location.
    ```
 6. Run Flask app:
    ```cmd
-   gunicorn application:application
+   flask --app application run
    ```
-7. Open a browser and visit `http://127.0.0.1:5000` to test the API locally.
+7. Open a browser and visit `http://127.0.0.1:5000` to test API locally.
 8. Deactivate virtual environment:
    ```cmd
    deactivate
@@ -193,8 +193,13 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
 ### Prerequisites
 - 7-Zip installed.
+  CMD
   ```cmd
   "C:\Program Files\7-Zip\7z.exe" a -tzip application.zip application.py requirements.txt Procfile
+  ```
+  PowerShell
+  ```powershell
+  & "C:\Program Files\7-Zip\7z.exe" a -tzip application.zip application.py requirements.txt Procfile
   ```
 </details>
 
