@@ -252,7 +252,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
   ![eb-console.png](./png/console.png)
 
 #### 6. Test API
-1. Copy app URL (e.g., `http://weather-api.eu-west-2.elasticbeanstalk.com`).
+1. Copy app URL (e.g., `http://weather-app.eu-west-2.elasticbeanstalk.com`).
 
    ![weather-app.png](./png/weather-app.png)
 
@@ -278,7 +278,6 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
 6. Clean Up
    1. Terminate Elastic Beanstalk Environment
-      - Go to Elastic Beanstalk console.
       - Select your application environment from the `Environment` tab.
       - Click `Actions` and select `Terminate Environment`.
       - Confirm the termination.
@@ -288,7 +287,7 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
       - Confirm the deletion.
    4. Delete S3 Bucket
       - Go to S3 console.
-      - Select the bucket.
+      - Select the bucket (e.g., elasticbeanstalk-region-account_id)
       - Empty the bucket
       - Select `Permissions` tab and delete `Bucket policy`.
       - Delete the bucket
