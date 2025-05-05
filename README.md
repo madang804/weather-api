@@ -93,7 +93,7 @@ The API is designed to simulate weather data for a given location.
    ```
 6. Run Flask app:
    ```cmd
-   flask --app application run
+   gunicorn application:application
    ```
 7. Open a browser and visit `http://127.0.0.1:5000` to test the API locally.
 8. Deactivate virtual environment:
@@ -132,7 +132,7 @@ The API is designed to simulate weather data for a given location.
    ```
 6. Run Flask app:
    ```bash
-   flask --app application run
+   gunicorn application:application
    ```
 7. Open a browser and visit `http://127.0.0.1:5000` to test the API locally.
 8. Deactivate virtual environment:
@@ -172,7 +172,7 @@ The API is designed to simulate weather data for a given location.
    ```
 6. Run Flask app:
    ```bash
-   flask --app application run
+   gunicorn application:application
    ```
 7. Open a browser and visit `http://127.0.0.1:5000` to test the API locally.
 8. Deactivate virtual environment:
