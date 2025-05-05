@@ -249,12 +249,12 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 #### 5. Monitor Deployment
 - Wait until you see **Environment successfully launched**. App is now live.
 
-  ![eb-console.png](./png/eb-console.png)
+  ![eb-console.png](./png/console.png)
 
 #### 6. Test API
 1. Copy app URL (e.g., `http://weather-api.eu-west-2.elasticbeanstalk.com`).
 
-   ![main.png](./png/main.png)
+   ![weather-app.png](./png/weather-app.png)
 
 2. Test endpoints in a browser.
 
@@ -264,7 +264,9 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
    ![wind.png](./png/wind.png)
 
-3. Test endpoints using curl (optional).
+   ![humidity.png](./png/humidity.png)
+
+4. Test endpoints using curl (optional).
 
    ![curl-weather.png](./png/curl-weather.png)
 
@@ -272,7 +274,9 @@ The Flask app is deployed to AWS Elastic Beanstalk via the AWS Console. Below is
 
    ![curl-wind.png](./png/curl-wind.png)
 
-4. Clean Up
+   ![curl-humidity.png](./png/curl-humidity.png)
+
+6. Clean Up
    1. Terminate Elastic Beanstalk Environment
       - Go to Elastic Beanstalk console.
       - Select your application environment from the `Environment` tab.
